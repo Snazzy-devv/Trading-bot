@@ -54,7 +54,7 @@ Return ONLY a JSON object:
 }}
 """
     response = ai_client.chat.completions.create(
-        model="google/gemini-2.0-flash-exp:free",
+        model="gpt-4o-mini",  # <--- Changed from invalid Gemini model
         messages=[
             {"role": "system", "content": "You are an institutional trading agent."},
             {"role": "user", "content": prompt}
