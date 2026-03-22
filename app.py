@@ -39,9 +39,10 @@ Current Data: {data}
 Client Risk Tolerance: {risk_desc} ({risk_level}/100)
 
 Instructions:
-1. If the risk exceeds the tolerance, return 'HOLD'.
-2. Analyze technicals and sentiment.
-3. Identify one 'Primary Risk Factor'.
+1. Provide the most suitable action: BUY, SELL, or HOLD, based on market data and risk.
+2. Explain reasoning in 'institutional_reasoning'.
+3. Identify one 'Primary Risk Factor' that could cause failure.
+4. Suggest qty, stop-loss (sl), and take-profit (tp).
 
 Return ONLY a JSON object:
 {{
